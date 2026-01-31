@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charset="UTF-8">
         <link rel="stylesheet" href="/css/livre.css">
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
     </head>
     <body>
         <header> 
@@ -16,10 +17,62 @@
                 </ul>
             </div>
         </header>
-        <div class="flipbook">
-             <div class="hard"></div>
-             <div class="hard"></div>
+        <div class="pageBody">
+            <div class="flipbookContainer">
+                <div class="flipbook">
+                    <div class="hard"> Mon livre <small> Nathanaël Mercier </small></div>
+                    <div class="hard"></div> 
+                    <div class="page">
+                        <small> Découvrons ensemble notre livre</small>
+                        <small> Un livre super intéressant </small>
+                    </div>
+                    <div>
+                        <img src="/img/sunDownTheRiver.jpg" alt="image de test">
+                        <small> Page 1 </small>
+                    </div>
+                    <div>
+                        <img src="/img/sunDownTheRiver.jpg" alt="image de test">
+                        <small> Page 2 </small>
+                    </div>
+                    <div>
+                        <img src="/img/sunDownTheRiver.jpg" alt="image de test">
+                        <small> Page 3 </small>
+                    </div>
+                    <div>
+                        <img src="/img/sunDownTheRiver.jpg" alt="image de test">
+                        <small> Page 4 </small>
+                    </div>
+                    <div>
+                        <img src="/img/sunDownTheRiver.jpg" alt="image de test">
+                        <small> Page 5 </small>
+                    </div>
+
+                    <div class="hard"></div>
+                    <div class="hard"> Merci - fin du livre <small> Nathanaël Mercier  </small></div>
+                </div>
+            </div>
+
+            <script src="/js/jquery.js"></script>
+            <script src="/js/turn.js"></script>
+            <script>
+                $(".flipbook").turn();
+            </script>
+
+            <div class="BookModifier">
+                <div class="divModifyButton">
+                    <button class="modifyButton" type="button"> Modifier le livre </button>
+                </div>
+            </div>
+
+            <div class="bookConfiguration">
+                <div class="configHead"></div>
+                <div class="configBody"></div>
+            </div>
         </div>
+
+
+
+
     </body>
     
     
