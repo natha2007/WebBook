@@ -76,6 +76,8 @@ body {
     justify-content: center;
 }
 
+
+
 .flipbook .hard {
     background: rgb(249, 71, 255) !important;
     background-image: linear-gradient(
@@ -107,6 +109,12 @@ body {
     align-items: center;
     gap: 10px;
 }
+
+.flipbook .page p {
+    margin:10px;
+    text-align: center;
+}
+/* max de caractères 237 + 130 = 367 */
 
 .page img {
     width: 70%;
