@@ -12,7 +12,7 @@
             <div class="banner">
                 <ul>
                     <li>
-                        <a href="/html/main.html"> Accueil </a>
+                        <a id="accueil" href="/html/main.html"> Accueil </a>
                     </li>
                 </ul>
             </div>
@@ -20,7 +20,7 @@
         <div class="pageBody">
             <div class="flipbookContainer">
                 <div class="flipbook">
-                    <div class="hard"> Mon livre <small> Nathanaël Mercier </small></div>
+                    <div class="hard"><p id="title"> Mon livre </p> <small class="author"> Nathanaël Mercier </small></div>
                     <div class="hard"></div> 
                     <div class="page">
                         <small> Découvrons ensemble notre livre</small>
@@ -30,25 +30,8 @@
                         <img src="/img/sunDownTheRiver.jpg" alt="image de test">
                         <small> Page 1 </small>
                     </div>
-                    <div>
-                        <img src="/img/sunDownTheRiver.jpg" alt="image de test">
-                        <small> Page 2 </small>
-                    </div>
-                    <div>
-                        <img src="/img/sunDownTheRiver.jpg" alt="image de test">
-                        <small> Page 3 </small>
-                    </div>
-                    <div>
-                        <img src="/img/sunDownTheRiver.jpg" alt="image de test">
-                        <small> Page 4 </small>
-                    </div>
-                    <div>
-                        <img src="/img/sunDownTheRiver.jpg" alt="image de test">
-                        <small> Page 5 </small>
-                    </div>
-
                     <div class="hard"></div>
-                    <div class="hard"> Merci - fin du livre <small> Nathanaël Mercier  </small></div>
+                    <div class="hard" id="endText"> Merci - fin du livre <small class="author"> Nathanaël Mercier  </small></div>
                 </div>
             </div>
 
@@ -57,12 +40,40 @@
             <script>
                 $(".flipbook").turn();
             </script>
+            
 
             <div class="BookModifier">
                 <div class="divModifyButton">
-                    <button class="modifyButton" type="button"> Modifier le livre </button>
+                    <button class="modifyButton" id="modBtn" type="button"> Modifier le livre  </button>
                 </div>
             </div>
+            <div class="bookConfiguration">
+                <div id="configHead">
+                    <div class="bookCover">
+                        <button class="modifyBookCover" id="mdBookCov" type="button"> Changer la couverture </button>
+                    </div class="pages">
+                    <div>
+                        <button class="modifyPages" id="mdPages" type="button"> Modifier les pages </button>
+                    </div>
+                    <div class="import">
+                        <button class="importBook" id="impBook" type="button"> Importer un livre </button>
+                    </div>
+                </div>
+                <div class="configBody">
+                    <div id="bodyCover">
+
+                    </div>
+                    <div id="bodyPages">
+
+                    </div>
+                    <div id="bodyImport">
+                        <p> Choisissez un fichier </p>
+                        
+                    </div>
+                </div>
+            </div>
+
+            
 
             <div class="bookConfiguration">
                 <div class="configHead"></div>
@@ -71,7 +82,7 @@
         </div>
 
 
-
+        <script src="/js/book.js"></script>
 
     </body>
     
