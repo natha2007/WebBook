@@ -1,7 +1,8 @@
 # WebBook
+Website in which I'm trying to make a realistic flipbook customizable.
+You will be able to add pages, to customize details such as the book cover or the pages displaying.
+You will also be able to save and load books.
 
-Website in which I make a realist flipbook.
-You will be able to add as much items as you want in the book.
-The elements will probably be added in
-a database.
-You will be able to load a database with elements to "load a book"
+# Scripts
+Took "turn.js" and "jquery.js" scripts out of a Youtube video "https://www.youtube.com/watch?v=HFnzWoGe0so&t=2s"
+for the flip book.
